@@ -9,6 +9,8 @@ class Calculator:
         self.window.title("Calculator")
         self.buttons_frame = self.create_buttons_frame()
         self.display_frame = self.create_display_frame()
+    def create_display_labels(self):
+        total_label = tk.Label(self.display_frame, text = self.total_expression, anchor=t)
 
     def create_display_frame(self):
         frame = tk.Frame(self.window, height = 221, bg = LIGHT_GRAY)
